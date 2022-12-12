@@ -57,8 +57,13 @@ def main(mytimer: func.TimerRequest, tablePath:func.Out[str]) -> None:
         "cast": tags[1],
         "s_list": tags[2],
         "chart_list": tags[3],
-        # "PartitionKey": f"종목명{i}",
-        # "RowKey": time.time()
+        "rank5": tags[4],
+        "rank6": tags[5],
+        "rank7": tags[6],
+        "rank8": tags[7],
+        "rank9": tags[8],
+        "rank10": tags[9],
+        
         "PartitionKey": "temp",
         "RowKey": time.time() #utc_timestamp
     }
